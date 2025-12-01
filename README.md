@@ -74,9 +74,12 @@ cd CargoPro
 flutter pub get
 ```
 
-3. Platform configuration:
+3. Minimal Firebase setup (high-level)
 
-- Ensure required platform services are configured (e.g., auth, keys) as per your environment.
+- Create a Firebase project and enable Phone Authentication.
+- Android: add your package name, download `google-services.json` into `android/app/`, add SHA keys.
+- Web: add a Web app, add authorized domain (e.g., localhost), and generate `lib/firebase_options.dart` (via FlutterFire CLI or manual config).
+- Do not commit secrets; keep configs environment-specific.
 
 4. Run the app:
 

@@ -92,7 +92,32 @@ class CreateObjectScreen extends GetView<ObjectController> {
                 ),
                 const SizedBox(height: 16),
 
-                const SizedBox(height: 8),
+                // Advanced section: Additional Data (JSON)
+                ExpansionTile(
+                  initiallyExpanded: false,
+                  leading: const Icon(Icons.code),
+                  title: const Text('Advanced: Additional Data (JSON)'),
+                  subtitle: const Text('Optional. Use to add custom key-value pairs'),
+                  children: [
+                    const SizedBox(height: 8),
+                    TextFormField(
+                      controller: controller.dataController,
+                      decoration: const InputDecoration(
+                        labelText: 'Data (JSON)',
+                        hintText: '{"warranty": "1 year", "weight": 1.2}',
+                        alignLabelWithHint: true,
+                      ),
+                      validator: (v) {
+                        if (v == null || v.trim().isEmpty) return null;
+                        return Validators.validateJson(v);
+                      },
+                      maxLines: 8,
+                      keyboardType: TextInputType.multiline,
+                    ),
+                    const SizedBox(height: 8),
+                  ],
+                ),
+                const SizedBox(height: 24),
 
                 // Submit button
                 Obx(() => ElevatedButton(
