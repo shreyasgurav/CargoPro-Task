@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684269589820",
+    "project_id": "cargopro-caeef",
+    "storage_bucket": "cargopro-caeef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684269589820:android:592a6af448b8d808bd7a39",
+        "android_client_info": {
+          "package_name": "com.cargopro.cargopro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCysUgE8vsPO7bDicvQmmcIgtWtU4tLDgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
