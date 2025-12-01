@@ -1,6 +1,6 @@
 # CargoPro Flutter App
 
-A production-style Flutter application with Firebase OTP authentication and CRUD operations.
+A Flutter application with Firebase OTP authentication and CRUD operations.
 
 ## 🚀 Features
 
@@ -74,20 +74,9 @@ cd CargoPro
 flutter pub get
 ```
 
-3. Firebase Setup:
+3. Platform configuration:
 
-#### For Android:
-- Create a Firebase project at https://console.firebase.google.com
-- Add an Android app with package name: `com.cargopro.cargo_pro_app`
-- Download `google-services.json` and place it in `android/app/`
-- Enable Phone Authentication in Firebase Console
-
-#### For Web:
-- Add a Web app in Firebase Console
-- Copy the Firebase configuration
-- Run: `flutterfire configure` (or manually create `lib/firebase_options.dart`)
-- Enable Phone Authentication in Firebase Console
-- Add your domain to authorized domains in Firebase Console
+- Ensure required platform services are configured (e.g., auth, keys) as per your environment.
 
 4. Run the app:
 
@@ -145,18 +134,6 @@ This app follows a clean architecture pattern with:
 
 ## 🚀 Deployment
 
-### Web (Firebase Hosting)
-
-1. Build for web:
-```bash
-flutter build web
-```
-
-2. Deploy to Firebase:
-```bash
-firebase deploy --only hosting
-```
-
 ### Android APK
 
 ```bash
@@ -173,10 +150,6 @@ APK location: `build/app/outputs/flutter-apk/app-release.apk`
 4. **Search/Filter:** Not implemented yet
 5. **iOS Build:** Not included in this submission
 
-## 📧 Contact
-
-For any questions, contact: careers@cargopro.ai
-
 ## 📄 License
 
-This project is created as part of the CargoPro frontend internship assignment.
+This project is provided as-is for demonstration purposes.
